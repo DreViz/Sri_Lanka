@@ -6,9 +6,9 @@ An interactive itinerary for our Sri Lanka road trip, 28 December 2026 to 5 Janu
 
 Download or clone this repository, then open `index.html` in a web browser. No installation or build step is required. Maps and Google Maps links need an internet connection.
 
-The checklist is stored locally in each browser. Shared expenses are stored in Supabase, in LKR, and require an approved account. Use Refresh to reload entries from the group. Older expenses saved on a device remain available under that day’s notebook and can be re-entered into the shared notebook.
+The checklist is stored locally in each browser. Shared expenses are stored in Supabase, in LKR, and are publicly readable by anyone with the site or API URL. An approved account is required to add expenses. Use Refresh to reload entries from the group. Older expenses saved on a device remain available under that day’s notebook and can be re-entered into the shared notebook.
 
-Account confirmation requires email delivery. Supabase requires custom SMTP to send confirmation emails to users outside the project organization; configure that before inviting the group. Database row-level security restricts access to approved members.
+Account confirmation requires email delivery. Supabase requires custom SMTP to send confirmation emails to users outside the project organization; configure that before inviting the group. Database row-level security restricts changes to approved members. A public view exposes expense day, description, amount, payment method and timestamp, but not creator IDs.
 
 ## Suggest changes
 
