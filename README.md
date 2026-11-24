@@ -1,10 +1,12 @@
 # Sri Lanka trip itinerary
 
-An interactive itinerary for our Sri Lanka road trip, 28 December 2026 to 5 January 2027. It includes day-by-day plans, maps, a searchable places list, a checklist, and a daily expense notebook.
+An interactive itinerary for our Sri Lanka road trip, 28 December 2026 to 5 January 2027. It includes phone-friendly sections for day-by-day plans, a currency converter, stay locations, viewpoints, a checklist, and a daily expense notebook.
 
 ## Open the itinerary
 
 Download or clone this repository, then open `index.html` in a web browser. No installation or build step is required. Maps and Google Maps links need an internet connection.
+
+The currency converter uses ExchangeRate-API reference rates and caches the last successful response in the browser; bank and card rates may differ. Internet access is required to fetch rates. The stay links currently point to the provided Google Maps pins; Airbnb listing URLs can be added when available.
 
 The checklist is stored locally in each browser. Shared expenses are stored in Supabase, in LKR, and are publicly readable by anyone with the site or API URL. An approved account is required to add expenses. Use Refresh to reload entries from the group. Older expenses saved on a device remain available under that day’s notebook and can be re-entered into the shared notebook.
 
